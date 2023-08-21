@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Coordinator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(wp4323472.jpg);
+            background-size: cover;
+        }
+
+        header {
+            background-image: url(red.jpeg) ;
+            background-size: cover;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+            font-family: cursive;
+        }
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .red-division {
+            height: 540px;
+            background-image: url(wp4323458.jpg) ;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .donate-button {
+            padding: 10px 20px;
+            background-color: white;
+            color: red;
+            border: 4px solid red;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .donate-button:hover {
+            background-color: red;
+            color: white;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .subscribe-input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .subscribe-button {
+            padding: 8px 15px;
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-details {
+            margin-top: 20px;
+        }
+
+        .contact-details p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .process-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #f44336;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .step-description {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Blood Donation Coordinator</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Donate Blood</a>
+        <a href="#">Find Donors</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to our Blood Donation Website</h2>
+        <p>
+            Welcome to our Blood Donation Website, where saving lives is just a heartbeat away.
+            We are dedicated to fostering a compassionate community of blood donors and recipients,
+            driven by the common goal of making a positive impact on the lives of those in need.
+            Our platform serves as a vital bridge, connecting generous donors with individuals
+            seeking life-saving blood transfusions. Whether you're a first-time donor or a regular 
+            contributor, we provide a seamless and secure environment for you to join our life-saving 
+            mission. Together, we can make a difference and be the lifeline for countless individuals
+            facing medical emergencies. Join us in this noble cause, and let's share the gift of life,
+            drop by drop.
+        </p>
+    </section>
+
+    <div class="red-division">
+        <a href="#" class="donate-button">Join with Us</a>
+    </div>
+
+<section>
+    <div class="process-container">
+        <h1>Donation Process</h1>
+        <div class="step">
+            <div class="step-icon">1</div>
+            <div class="step-description">Register as a blood donor on our website.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon">2</div>
+            <div class="step-description">Check your eligibility and make an appointment at a nearby blood donation center.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon">3</div>
+            <div class="step-description">Arrive at the donation center on the scheduled date and time.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon">4</div>
+            <div class="step-description">Undergo a brief medical screening to ensure your safety and the recipient's.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon">5</div>
+            <div class="step-description">Proceed with the blood donation process which typically takes about 10-15 minutes.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon">6</div>
+            <div class="step-description">Enjoy a refreshment after the donation and rest for a few minutes.</div>
+        </div>
+        <div class="step">
+            <div class="step-icon">7</div>
+            <div class="step-description">You've successfully donated blood! Your selfless act could save lives.</div>
+        </div>
+    </div>
+</section>
+    <section id="donate">
+        <!-- Add blood donation form here -->
+        <h2>Request Appointment</h2>
+        <form action="/donate" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="blood-group">Blood Group:</label>
+            <select id="blood-group" name="blood-group" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <section id="find-donors">
+        <!-- Add find donors section content here -->
+        <h2>Find Donors</h2>
+        <form action="/find-donors" method="post">
+            <label for="blood-group-search">Blood Group:</label>
+            <select id="blood-group-search" name="blood-group-search" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <input type="submit" value="Search">
+    </section>
+    <footer>
+        <h3>Subscribe to our Newsletter</h3>
+        <form action="#" method="post">
+            <input type="email" class="subscribe-input" placeholder="Your email address" required>
+            <input type="submit" class="subscribe-button" value="Subscribe">
+        </form>
+        <div class="contact-details">
+            <p>Contact us at: mail.com</p>
+            <p>Phone: +91 9529334256</p>
+            <p>Address: Pune, India</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">FAQs</a>
+            <!-- Add more links as needed -->
+        </div>
+        <p>&copy; 2023 Blood Donation Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
